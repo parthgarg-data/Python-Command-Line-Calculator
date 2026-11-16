@@ -32,8 +32,8 @@ def sqrrt(a):
         print("Cannot calculate square root of negative number")
         return None
 
-def percentage(a, b):
-    return (a / 100) * b
+def percentage(number, percent):
+    return (number * percent) / 100
 
 def floor_division(a, b):
     if b == 0:
@@ -59,7 +59,7 @@ def cube(a):
 
 
 while True:        
-    print("\n========== SMART CALCULATOR ==========")
+    print("\n========== CALCPRO ==========")
     print("1. Addition")
     print("2. Subtraction")
     print("3. Multiplication")
@@ -111,11 +111,16 @@ while True:
 
     else:
         try:
-            a=float(input("Enter First number : "))
-            b=float(input("Enter Second Number : "))
+            if ch == 8:
+                a = float(input("Enter number : "))
+                b = float(input("Enter percentage (%) : "))
+            else:
+                a = float(input("Enter First number : "))
+                b = float(input("Enter Second number : "))
         except ValueError:
             print("Please enter a valid number")
             continue
+
         if ch==1:
             result=addition(a,b)
             
