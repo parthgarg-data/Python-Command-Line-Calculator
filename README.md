@@ -1,4 +1,4 @@
-# Python Command-line Calculator
+# CALCPRO
 
 A command-line calculator built using Python. This project was created to practise Core Python concepts through practical implementation.
 
